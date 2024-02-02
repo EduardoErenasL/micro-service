@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: car-service
+  cloud:
+    config:
+      enabled: true
+      uri: http:localhost:5004
+  datasource:
+    url: jdbc:h2:mem:microcar
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
