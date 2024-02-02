@@ -1,0 +1,34 @@
+API GATEWAY (Puerta de enlace):
+	Enrutador de peticiones.
+	Expone los microservicios al cliente en un solo endpoint.
+	Administra los endpoints internamente.
+	Gestiona la seguridad.
+	Ejemplo de proveedores: Microsoft(API Management), Amazon(AWS API Gateway).
+
+SERVERLESS (Sin Servidor):
+	Termino se refiere a que no tienes que administrar o configurar servidores el proveedor de la nube lo debe de hacer.
+	No tienes un servidor encendido si el proveedor asigna los recursos cuando se ejecuta la aplicacion y luego los apaga.
+	Ejemplo de proveedores: Google(Coud Functions), Microsoft (Azure Functions), Amazon(AWS Lambda).
+
+DOCKER
+	Contiene el microservicio y sus dependencias y lo mantiene aislado.
+
+KUBERNETES
+	Configurar, adminiostar y escalar contenedores.
+
+
+PRINCIPIOS SOLID:
+	(S) Principo de responsabilidad Unica (Single Responsibility Principle - SRP).
+		- Una clase debe de tener una unica responsabilidad.
+	(O) Principio de Abierto/Cerrado (Open/Closed Principle - OCP).
+		- Cerrada para su modificación, pero abierta para su extención.
+	(L) Principio de sustitución de Liskov (Liskov Substitution Principle - LSP).
+		- Si tenemos clases padres y clases hijas (herencia), las instancias de las clases hijas y las instancias 
+		  de la clase padre deben de poder intercambiarse sin recibir resultados inesperados (se debe de evitar agregar 
+		  reestricciones o cambiar el comportamiento heredado de una clase para no tener comportamientos inesperados).
+	(I) Principio de segregación de interfaces (Interface Segregation Principle - ISP)
+		- Los clientes no deben de verse obligados a depender de interfaces que no utilizan (un cliente solo debe de 
+		  conocer los metodos que no va a utilizar)
+	(D) Principio de inversion de dependencias (Dependency Inversion Principle - DIP)
+		- Las clases de alto nivel no deben de depender de las de bajo nivel, ambas deben de depender de abstraciones. 
+
