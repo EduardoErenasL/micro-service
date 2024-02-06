@@ -115,3 +115,8 @@ Config Server
     			database-platform: org.hibernate.dialect.H2Dialect
     			hibernate:
       				ddl-auto: create
+
+
+EUREKA (Servidor de registro y descubrimiento)
+	Al utilizar EUREKA podemos registrar y descubrir nuestros microservicios para poder comunicar entre ellos
+	de una forma mas optima poder conocer las ip para evitar dejar estaticas en nuestro codigo o properties.
