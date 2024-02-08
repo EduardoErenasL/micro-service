@@ -120,3 +120,13 @@ Config Server
 EUREKA (Servidor de registro y descubrimiento)
 	Al utilizar EUREKA podemos registrar y descubrir nuestros microservicios para poder comunicar entre ellos
 	de una forma mas optima poder conocer las ip para evitar dejar estaticas en nuestro codigo o properties.
+	Ruta para ver EUREKA:
+		- http://localhost:8761/
+
+Circuit Breaker (Patron De Diseño)
+	Empedir que el sistema deje de funcionar cuando un servicio no este disponible.
+	Se puede utilizar resilience4j en los servicios donde consume otros microservicios para 
+	evitar que el servicio deje de funcionar cuando estos esten fuera de servicio.
+
+Zipkin (Rastreo)
+	Con esta herramienta podremos monitorear y ver la trasa de los servicios que consumimos.
